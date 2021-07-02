@@ -90,7 +90,7 @@
 <meta property="og:image" content="c:/Users/YONGRL-PC/AppData/Roaming/Typora/typora-user-images/image-20201211170811320.png">
 <meta property="og:image" content="c:/Users/YONGRL-PC/AppData/Roaming/Typora/typora-user-images/image-20201211181730900.png">
 <meta property="article:published_time" content="2021-07-01T03:44:22.000Z">
-<meta property="article:modified_time" content="2021-07-01T06:42:19.843Z">
+<meta property="article:modified_time" content="2021-07-02T08:05:33.169Z">
 <meta property="article:author" content="菌菌">
 <meta property="article:tag" content="技术记录">
 <meta name="twitter:card" content="summary">
@@ -309,8 +309,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
+                    <span itemprop="name">网络知识</span>
                   </a>
                 </span>
 
@@ -352,6 +352,8 @@
 
       
         <h1 id="PPTP-amp-L2TP技术总结"><a href="#PPTP-amp-L2TP技术总结" class="headerlink" title="PPTP&amp;L2TP技术总结"></a>PPTP&amp;L2TP技术总结</h1><h2 id="控制连接和隧道维护"><a href="#控制连接和隧道维护" class="headerlink" title="控制连接和隧道维护"></a>控制连接和隧道维护</h2><p>   在PPTP建立连接过程中，客户端先向服务器1723端口发送TCP连接请求，这里的TCP连接不是标准的三次握手，第三次回应的ACK会随着载荷一起发送，这样做的好处是可以节省一些网络流量，减少不必要的开销。在TCP连接完成以后，PPTP进入控制连接的建立，首先客户端会发Start Control Connection Request报文给服务端要求建立连接，服务器端接到后发送应答报文，客户端再次发送Outgoing Call Request，等到服务器端响应后控制连接建立。</p>
+<span id="more"></span>     #首页只会显示标记以前的内容，标记后的内容可以通过阅读更多查阅
+
 <p>   接着是标准的PPP协商，上面说过，PPTP是建立在PPP的基础上的隧道协议。这样先进行LCP层的协商，客户端跟服务器端双方都要把自己的链路层配置发送给对方，客户端的配置一般比较简单，服务器端收到后就会接受 ，而服务器端发给客户端的配置报文，客户端会对Unknow选项和不接受选项向服务器反馈，服务器收到后删除这些选项再次发送配置，客户端接受，LCP协商完成。此时在PPTP的控制层会互发Set Link Info报文来对刚刚协商好的选项进行配置。</p>
 <p>   LCP协商完成后，服务器开始对客户端进行身份验证，可以选的验证方式很多，有PAP、CHAP、MS-CHAP等方式，身份验证后就进行NCP层协商。主要是来确定双方网络层接口参数，配置虚拟虚拟端口，分配IP、DNS等信息。</p>
 <p>之后PPTP连接过程就算是完成，PPTP开始发送GRE封装的数据包，但每隔60秒，连接双方会发送Echo Request来询问链路是否可用，如果对方在此后60秒内没有响应，连接就会被终止。正常的连接终止时通过发送Stop Control Connection Request来通知对方结束连接。</p>
@@ -463,8 +465,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/07/02/%E6%8A%80%E8%83%BD%E6%A0%91/" rel="prev" title="技能树">
-                技能树 <i class="fa fa-chevron-right"></i>
+              <a href="/2021/07/02/%E6%8A%80%E8%83%BD%E6%A0%91/" rel="prev" title="技能图谱">
+                技能图谱 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

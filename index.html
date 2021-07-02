@@ -246,7 +246,7 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type--tags" itemscope itemtype="http://schema.org/Article">
   
   
   
@@ -270,7 +270,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2021/07/02/%E6%8A%80%E8%83%BD%E6%A0%91/" itemprop="url">技能树</a></h1>
+                <a class="post-title-link" href="/2021/07/02/%E6%8A%80%E8%83%BD%E6%A0%91/" itemprop="url">技能图谱</a></h1>
         
 
         <div class="post-meta">
@@ -292,6 +292,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
+                    <span itemprop="name">网络知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -321,268 +343,14 @@
 
       
         
-          
-            <h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><p>以前在工作中对要学习的东西进行了系统性的整理，列了一个大纲出来，本来是用xmind的，但是目前图片服务器还未建好，先上传一个大纲吧。</p>
-<h2 id="Linux系统"><a href="#Linux系统" class="headerlink" title="Linux系统"></a>Linux系统</h2><h3 id="多线程编程"><a href="#多线程编程" class="headerlink" title="多线程编程"></a>多线程编程</h3><h3 id="IPC通信"><a href="#IPC通信" class="headerlink" title="IPC通信"></a>IPC通信</h3><h3 id="内核裁剪、移植、编译"><a href="#内核裁剪、移植、编译" class="headerlink" title="内核裁剪、移植、编译"></a>内核裁剪、移植、编译</h3><h3 id="BootLoader"><a href="#BootLoader" class="headerlink" title="BootLoader"></a>BootLoader</h3><h3 id="设备驱动"><a href="#设备驱动" class="headerlink" title="设备驱动"></a>设备驱动</h3><h3 id="内核与用户层的交互"><a href="#内核与用户层的交互" class="headerlink" title="内核与用户层的交互"></a>内核与用户层的交互</h3><h2 id="Linux常用指令"><a href="#Linux常用指令" class="headerlink" title="Linux常用指令"></a>Linux常用指令</h2><h3 id="文本操作"><a href="#文本操作" class="headerlink" title="文本操作"></a>文本操作</h3><ul>
-<li>grep</li>
-<li>awk</li>
-<li>sed</li>
-</ul>
-<h3 id="硬件信息相关"><a href="#硬件信息相关" class="headerlink" title="硬件信息相关"></a>硬件信息相关</h3><ul>
-<li>ifconfig</li>
-<li>free</li>
-<li>fdisk</li>
-<li>ethtool</li>
-<li>mii-tool</li>
-<li>dmidecode</li>
-<li>dmesg</li>
-<li>lspci</li>
-</ul>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>echo</li>
-<li>printf</li>
-<li>rpm</li>
-<li>yum</li>
-<li>watch</li>
-<li>alias</li>
-<li>unalias</li>
-<li>date</li>
-<li>clear</li>
-<li>history</li>
-<li>eject</li>
-<li>time</li>
-<li>nohup</li>
-<li>nc</li>
-<li>xargs</li>
-<li>exec</li>
-<li>export</li>
-<li>unset</li>
-<li>type</li>
-</ul>
-<h3 id="系统性能监视高级命令"><a href="#系统性能监视高级命令" class="headerlink" title="系统性能监视高级命令"></a>系统性能监视高级命令</h3><ul>
-<li>uptime</li>
-<li>top</li>
-<li>free</li>
-<li>vmstat</li>
-<li>mpstat</li>
-<li>iostat</li>
-<li>sar</li>
-<li>chkconfig</li>
-</ul>
-<h3 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h3><ul>
-<li>top</li>
-<li>free</li>
-<li>vmstat</li>
-<li>mpstat</li>
-<li>iostat</li>
-<li>sar</li>
-</ul>
-<h3 id="cpu"><a href="#cpu" class="headerlink" title="cpu"></a>cpu</h3><ul>
-<li>top</li>
-<li>vmstat</li>
-<li>iostat</li>
-<li>sar</li>
-</ul>
-<h3 id="I-O"><a href="#I-O" class="headerlink" title="I/O"></a>I/O</h3><ul>
-<li>vmstat</li>
-<li>mpstat</li>
-<li>iostat</li>
-<li>sar</li>
-</ul>
-<h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><ul>
-<li>ipcs</li>
-<li>ipcrm</li>
-<li>lsof</li>
-<li>strace</li>
-<li>lstrace</li>
-</ul>
-<h3 id="负载"><a href="#负载" class="headerlink" title="负载"></a>负载</h3><ul>
-<li>uptime</li>
-<li>mount</li>
-<li>umount</li>
-<li>df</li>
-<li>du</li>
-<li>fsck</li>
-<li>dd</li>
-<li>dumpe2fs</li>
-<li>dump</li>
-</ul>
-<h3 id="关机和查看系统信息"><a href="#关机和查看系统信息" class="headerlink" title="关机和查看系统信息"></a>关机和查看系统信息</h3><ul>
-<li>shutdown</li>
-<li>halt</li>
-<li>init</li>
-</ul>
-<h3 id="系统安全相关命令"><a href="#系统安全相关命令" class="headerlink" title="系统安全相关命令"></a>系统安全相关命令</h3><ul>
-<li>chmod</li>
-<li>chown</li>
-<li>chgrp</li>
-<li>chage</li>
-<li>passwd</li>
-<li>su</li>
-<li>sudo</li>
-<li>umask</li>
-<li>chattr</li>
-</ul>
-<h3 id="网络相关"><a href="#网络相关" class="headerlink" title="网络相关"></a>网络相关</h3><ul>
-<li><p>hostname</p>
-<ul>
-<li>hostname 没有选项，显示主机名字</li>
-<li>hostname –d 显示机器所属域名</li>
-<li>hostname –f 显示完整的主机名和域名</li>
-<li>hostname –i 显示当前机器的ip地址</li>
-</ul>
-</li>
-<li><p>ping</p>
-<ul>
-<li>ping 将数据包发向用户指定地址。当包被接收，目标机器发送返回数据包。ping 主要有两个作用：</li>
-<li>用来确认网络连接是畅通的。</li>
-<li>用来查看连接的速度信息。</li>
-</ul>
-</li>
-<li><p>ifconfig</p>
-</li>
-<li><p>iwconfig</p>
-</li>
-<li><p>nslookup</p>
-</li>
-<li><p>traceroute</p>
-</li>
-<li><p>finger</p>
-</li>
-<li><p>telnet</p>
-<ul>
-<li>通过telnet协议连接目标主机，如果telnet连接可以在任一端口上完成即代表着两台主机间的连接良好。</li>
-<li>telnet hostname port – 使用指定的端口telnet主机名。这通常用来测试主机是否在线或者网络是否正常。</li>
-</ul>
-</li>
-<li><p>ethtool</p>
-<ul>
-<li>ethtool允许你查看和更改网卡的许多设置（不包括Wi-Fi网卡）。你可以管理许多高级设置，包括tx/rx、校验及网络唤醒功能。下面是一些你可能感兴趣的基本命令：</li>
-<li>ethtool -i 显示一个特定网卡的驱动信息，检查软件兼容性时尤其有用</li>
-<li>ethtool -p 启动一个适配器的指定行为，比如让适配器的LED灯闪烁，以帮助你在多个适配器或接口中标识接口名称</li>
-<li>ethtool -s 显示网络统计信息</li>
-<li>ethtool speed &lt;10|100|1000&gt; 设置适配器的连接速度，单位是Mbps</li>
-</ul>
-</li>
-<li><p>netstat</p>
-<ul>
-<li>发现主机连接最有用最通用的Linux命令。你可以使用”netstat -g”查询该主机订阅的所有多播组（网络）</li>
-<li>netstat -nap | grep port 将会显示使用该端口的应用程序的进程id</li>
-<li>netstat -a or netstat –all 将会显示包括TCP和UDP的所有连接</li>
-<li>netstat –tcp or netstat –t 将会显示TCP连接</li>
-<li>netstat –udp or netstat –u 将会显示UDP连接</li>
-<li>netstat -g 将会显示该主机订阅的所有多播网络。</li>
-</ul>
-</li>
-</ul>
-<h2 id="网络知识储备"><a href="#网络知识储备" class="headerlink" title="网络知识储备"></a>网络知识储备</h2><h3 id="网络基础协议"><a href="#网络基础协议" class="headerlink" title="网络基础协议"></a>网络基础协议</h3><ul>
-<li><p>dhcp协议</p>
-</li>
-<li><p>pppoe协议</p>
-</li>
-<li><p>dns协议</p>
-</li>
-<li><p>http协议</p>
-</li>
-<li><p>https协议</p>
-</li>
-<li><p>IPV6协议</p>
-<ul>
-<li>DHCPV6</li>
-<li>PPPOEv6</li>
-<li>NDP报文</li>
-</ul>
-</li>
-<li><p>IGMP协议</p>
-</li>
-<li><p>VLAN协议</p>
-</li>
-<li><p>DDNS协议</p>
-</li>
-<li><p>RAP协议</p>
-</li>
-<li><p>ICMP协议</p>
-</li>
-</ul>
-<h3 id="报文分析"><a href="#报文分析" class="headerlink" title="报文分析"></a>报文分析</h3><ul>
-<li>wireshark</li>
-<li>ominipik</li>
-<li>tcpdump</li>
-</ul>
-<h2 id="Linux-网络"><a href="#Linux-网络" class="headerlink" title="Linux 网络"></a>Linux 网络</h2><h3 id="Iptables工具使用"><a href="#Iptables工具使用" class="headerlink" title="Iptables工具使用"></a>Iptables工具使用</h3><ul>
-<li><p>格式：iptables [-t table] COMMAND chain CRETIRIA -j ACTION</p>
-<ul>
-<li><p>-t table表示filter,nat,mangle三个表，当不指定时，默认指向filter表</p>
-</li>
-<li><p>COMMAND 定义如何对规则进行管理</p>
-<ul>
-<li><p>链管理命令</p>
-<ul>
-<li>-P 设置默认策略，一般之分拒绝和接收</li>
-<li>-F Flash 清空规则链</li>
-<li>-N New 支持用户新建（自定义）一个链</li>
-<li>-X 删除用户自定义的空链（即删除前必须清空规则链）</li>
-<li>-E 重命名用户自定义链</li>
-<li>-Z 清空链以及链中默认规则的计数器</li>
-</ul>
-</li>
-<li><p>规则管理命令</p>
-<ul>
-<li>-A 追加到链最后一个规则</li>
-<li>-I (i):在指定链中插入一条规则，默认在第一行</li>
-<li>-L num:插入到第num条</li>
-<li>-R num:替换第num条的规则</li>
-<li>-D num:删除第num条规则</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>chain: 指定链操作</p>
-</li>
-<li><p>CRETIRIA:指定匹配标准</p>
-</li>
-<li><p>-j ACTION:指定如何处理</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="netfilter框架"><a href="#netfilter框架" class="headerlink" title="netfilter框架"></a>netfilter框架</h3><ul>
-<li><p>四表（按优先级排列）</p>
-<ul>
-<li>raw 设置raw时一般时为了不再让iptables做数据包的连接跟踪处理，提高性能</li>
-<li>mangle 用户对特定数据包的修改</li>
-<li>nat 用于nat功能，端口映射，地址映射等</li>
-<li>filter 一般的过滤功能</li>
-</ul>
-</li>
-<li><p>五链（按接收顺序）</p>
-<ul>
-<li>Prerouting 数据包进入路由表之前</li>
-<li>Input 通过路由表后进入本机</li>
-<li>Forward 通过路由表后转发</li>
-<li>Output 由本机产生，向外转发</li>
-<li>Postrouting 在发送网卡收到之前</li>
-</ul>
-</li>
-<li><p>二层收包</p>
-<ul>
-<li>中断触发</li>
-<li>NAPI触发</li>
-<li>vlan处理</li>
-<li>原始套接字处理</li>
-</ul>
-</li>
-<li><p>三层收包</p>
-<ul>
-<li>Hook钩子函数挂载</li>
-<li>原始套接字处理</li>
-<li>netfilterHook点处理</li>
-</ul>
-</li>
-</ul>
-<p><em>XMind: ZEN - Trial Version</em></p>
-
-          
+          江湖上流传的武学招式尽数如此。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/07/02/%E6%8A%80%E8%83%BD%E6%A0%91/">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -687,8 +455,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
+                    <span itemprop="name">网络知识</span>
                   </a>
                 </span>
 
@@ -725,73 +493,14 @@
 
       
         
-          
-            <h1 id="PPTP-amp-L2TP技术总结"><a href="#PPTP-amp-L2TP技术总结" class="headerlink" title="PPTP&amp;L2TP技术总结"></a>PPTP&amp;L2TP技术总结</h1><h2 id="控制连接和隧道维护"><a href="#控制连接和隧道维护" class="headerlink" title="控制连接和隧道维护"></a>控制连接和隧道维护</h2><p>   在PPTP建立连接过程中，客户端先向服务器1723端口发送TCP连接请求，这里的TCP连接不是标准的三次握手，第三次回应的ACK会随着载荷一起发送，这样做的好处是可以节省一些网络流量，减少不必要的开销。在TCP连接完成以后，PPTP进入控制连接的建立，首先客户端会发Start Control Connection Request报文给服务端要求建立连接，服务器端接到后发送应答报文，客户端再次发送Outgoing Call Request，等到服务器端响应后控制连接建立。</p>
-<p>   接着是标准的PPP协商，上面说过，PPTP是建立在PPP的基础上的隧道协议。这样先进行LCP层的协商，客户端跟服务器端双方都要把自己的链路层配置发送给对方，客户端的配置一般比较简单，服务器端收到后就会接受 ，而服务器端发给客户端的配置报文，客户端会对Unknow选项和不接受选项向服务器反馈，服务器收到后删除这些选项再次发送配置，客户端接受，LCP协商完成。此时在PPTP的控制层会互发Set Link Info报文来对刚刚协商好的选项进行配置。</p>
-<p>   LCP协商完成后，服务器开始对客户端进行身份验证，可以选的验证方式很多，有PAP、CHAP、MS-CHAP等方式，身份验证后就进行NCP层协商。主要是来确定双方网络层接口参数，配置虚拟虚拟端口，分配IP、DNS等信息。</p>
-<p>之后PPTP连接过程就算是完成，PPTP开始发送GRE封装的数据包，但每隔60秒，连接双方会发送Echo Request来询问链路是否可用，如果对方在此后60秒内没有响应，连接就会被终止。正常的连接终止时通过发送Stop Control Connection Request来通知对方结束连接。</p>
-<p>实际抓取PPTP拨号交互报文：</p>
-<h3 id="1-Start-control-connection-request报文"><a href="#1-Start-control-connection-request报文" class="headerlink" title="1.Start-control-connection-request报文"></a>1.Start-control-connection-request报文</h3><p>由PPTP客户端发出，请求建立控制连接；</p>
-<p><img src="C:\Users\YONGRL-PC\AppData\Roaming\Typora\typora-user-images\image-20201211170012705.png" alt="image-20201211170012705"></p>
-<p>Length ：该 PPTP 信息的八位总长，包括整个 PPTP 头。</p>
-<p>Message Type ： 信息类型。可能值有：1、控制信息；2、管理信息。</p>
-<p>Magic Cookie ： Magic Cookie 以连续的 0x1A2B3C4D 进行发送，其基本目的是确保接收端与 TCP数据流间的正确同步运行。</p>
-<p>Control Message Type ：值为1；</p>
-<p>Reserved 0 &amp; 1 ： 保留字段，必须设置为0。</p>
-<p>Protocol Version ： PPTP版本号。</p>
-<p>Framing Capabilities ： 指出帧类型，该信息发送方可以提供：1、异步帧支持（Asynchronous Framing Supported）；2、同步帧支持（Synchronous Framing Supported）。</p>
-<p>Bearer Capabilities ： 指出承载性能，该信息发送方可以提供：1、模拟访问支持（Analog Access Supported）；2、数字访问支持（Digital access supported）。</p>
-<p>Maximum Channels ： 该 PPTP服务器 可以支持的个人 PPP 会话总数。</p>
-<p>Firmware Revision ： 若由 PPTP服务器 出发，则包括发出 PPTP服务器时的固件修订本编号；若由 PPTP客户端 出发，则包括 PPTP客户端 PPTP 驱动版本。</p>
-<p>Host Name ： 包括发行的 PPTP服务器 或 PPTP客户端的 DNS 名称。</p>
-<p>Vendor Name ： 包括特定供应商字串，指当请求是由 PPTP客户端 提出时，使用的 PPTP服务器 类型或 PPTP客户端软件类型。</p>
-<p><img src="C:\Users\YONGRL-PC\AppData\Roaming\Typora\typora-user-images\image-20201211170811320.png" alt="image-20201211170811320"></p>
-<h2 id="PPP协商过程"><a href="#PPP协商过程" class="headerlink" title="PPP协商过程"></a>PPP协商过程</h2><p>当PPTP控制通道建立完成后，发起PPP协商</p>
-<h3 id="1-LCP协商"><a href="#1-LCP协商" class="headerlink" title="1.LCP协商"></a>1.LCP协商</h3><p> 1、Client发送一个Configure-Request，把自己的link layer configure发给Server，Client端的Configure一般比较简单，所以Server一下子就接受了，立即回了一个Configure-Ack；</p>
-<p> 2、Server同时也必须发送一个Configure-Request，把自己的link layer configure发给Client，而这个configure包含的内容往往比较多；</p>
-<p> 3、如果Client收到的Configure-Request中，有unknow的配置项，就会把这些项列出来发一个Configure-Reject包给Server；</p>
-<p>  4、Server端把Client不认识的配置项删掉，再次重发Configure-Request；</p>
-<p>   5、这次Client收到的配置项全都认识了，开始检查是不是所有的配置都可以接受，如果接受的话LCP过程结束，否则把不能接受的配置项列出来发送Configure-Nak给Server；</p>
-<p>   6、Server再次修改配置项，再次发送Configure-Request；</p>
-<p>   7、 Client发现这次的配置项全都认识，而且全都是自己可以接受的，回发Configure-Ack。</p>
-<p>  8、Client和Server接受彼此的配置之后，PPTP的控制层会彼此互发Set Link Info；</p>
-<h3 id="2-PPP协议的身份验证"><a href="#2-PPP协议的身份验证" class="headerlink" title="2.PPP协议的身份验证"></a>2.PPP协议的身份验证</h3><p>   \9. LCP协商完毕后，PPP协议的Server端会对Client端进行身份验证；</p>
-<p>   \10. 可以选CHAP、MS-CHAP、MS-CHAP-v2…进行验证，现在以CHAP为例，需要注意到以下几点：</p>
-<p>​    （1） Server发送Challenge，其中包括一个challenge string和server name；</p>
-<p>​    （2） Client回Response，其中包括用户名，和密码和challeng string。其中用户名以明文发送（这个需要特别注意），密码的challenge string经过单向hash算法后以密文形式发送；</p>
-<p>​    （3） Server发送success，表示身份验证成功。</p>
-<h3 id="3-PPP协议的NCP协商"><a href="#3-PPP协议的NCP协商" class="headerlink" title="3.PPP协议的NCP协商"></a>3.PPP协议的NCP协商</h3><p>   \11. 身份验证通过后，PPP双方会进行NCP协商，用来确定互相通信的网络层接口参数；</p>
-<p>   \12. 接下来你会看到一大堆IPCP协商数据包，它是NCP基于TCP/IP的接口协商协议。Server和Client都要把自己的Miniport信息发给对方，告诉对方我以后就用它和你通信了，你同不同意请给回个话。具体过程如下：</p>
-<p>​    （1） Server把自己的Miniport信息通过Configure-Request发送给Client；</p>
-<p>​    （2） Client也把自己的Miniport信息通过Configure-Request发送给Server；（这个时候Client发出的配置信息是完全无效的数据，之所以要故意发无效数据，是要求Server来给自己分配IP等信息）</p>
-<p>​    （3） Client接受Server的接口配置，发送Configure-Ack；</p>
-<p>​    （4） Server发现Client的配置是无效的，自己给Client发送一组有效的配置信息，通过Configure-Nak发送给Client，其中主要是给他分配IP；</p>
-<p>​    （5） Client根据Server端发出的Configure-Nak，提取出给自己分配的IP、DNS等信息，并设置Miniport接口；</p>
-<p>​    （6） Client根据修改后的配置，再次发送Configure-Request；</p>
-<p>​    （7） Server接受Client的配置，发送Configure-Ack；</p>
-<h3 id="4-CCP报文"><a href="#4-CCP报文" class="headerlink" title="4.CCP报文"></a>4.CCP报文</h3><p>   CCP中包括了MPPC和MPPE的参数协商，也就是Microsoft</p>
-<p>Point-to-Point Compression 和 Microsoft Point-to-Point Encryption的参数协商，用来确定数据包中的压缩和加密算法和参数。</p>
-<h2 id="数据传输"><a href="#数据传输" class="headerlink" title="数据传输"></a>数据传输</h2><p>   PPTP隧道建立完成后，使用GRE封装PPP报文在IP网络环境中传输。</p>
-<h1 id="L2TP连接过程"><a href="#L2TP连接过程" class="headerlink" title="L2TP连接过程"></a>L2TP连接过程</h1><h3 id="控制报文用于建立和拆除、维持隧道"><a href="#控制报文用于建立和拆除、维持隧道" class="headerlink" title="控制报文用于建立和拆除、维持隧道"></a><strong>控制报文用于建立和拆除、维持隧道</strong></h3><p>主要包括：</p>
-<ul>
-<li>SCCRQ（Start-Control-Connection-Request）：控制连接发启请求。由LAC或者LNS向对端发送，用来初始化LAC和LNS之间的隧道，开始隧道的建立过程。NGFW的应用场景中，一般都是由LAC向LNS发起请求。</li>
-<li>SCCRP（Start-Control-Connection-Reply）：表示接受了对端的连接请求，隧道的建立过程可以继续。</li>
-<li>SCCCN（Start-Control-Connection-Connected）：对SCCRP的回应，完成隧道的建立。</li>
-<li>StopCCN（Stop-Control-Connection-Notification）：由LAC或者LNS发出，通知对端隧道将要停止，控制连接将要关闭。另外，所有活动的会话都会被清除。</li>
-<li>HELLO：隧道保活控制消息。L2TP使用Hello报文来检测隧道的连通性。LAC和LNS定时向对端发送Hello报文，如果在一段时间内未收到Hello报文的应答，隧道将被清除。</li>
-</ul>
-<p><strong>会话报文用于建立和拆除会话</strong>，主要包括：</p>
-<ul>
-<li>ICRQ（Incoming-Call-Request）：当LAC检测到有用户拨入电话的时候，向LNS发送ICRQ，请求在已经建立的隧道中建立会话。</li>
-<li>ICRP（Incoming-Call-Reply）：用来回应ICRQ，表示ICRQ成功，LNS也会在ICRP中标识L2TP会话必要的参数。</li>
-<li>ICCN（Incoming-Call-Connected）：用来回应ICRP，L2TP会话建立完成。</li>
-<li>CDN（Call-Disconnect-Notify）：由LAC或者LNS发出，通知对端会话将要停止。</li>
-</ul>
-<p><strong>数据消息</strong>：用于承载用户的PPP连接数据报文，并在隧道上进行传输。数据消息的传输是不可靠传输，若数据报文丢失，不予重传。不支持对数据消息的流量控制和拥塞控制。</p>
-<p>报文交互过程如下：</p>
-<p><img src="C:\Users\YONGRL-PC\AppData\Roaming\Typora\typora-user-images\image-20201211181730900.png" alt="image-20201211181730900"></p>
-
-          
+          <h1 id="PPTP-amp-L2TP技术总结"><a href="#PPTP-amp-L2TP技术总结" class="headerlink" title="PPTP&amp;L2TP技术总结"></a>PPTP&amp;L2TP技术总结</h1><h2 id="控制连接和隧道维护"><a href="#控制连接和隧道维护" class="headerlink" title="控制连接和隧道维护"></a>控制连接和隧道维护</h2><p>   在PPTP建立连接过程中，客户端先向服务器1723端口发送TCP连接请求，这里的TCP连接不是标准的三次握手，第三次回应的ACK会随着载荷一起发送，这样做的好处是可以节省一些网络流量，减少不必要的开销。在TCP连接完成以后，PPTP进入控制连接的建立，首先客户端会发Start Control Connection Request报文给服务端要求建立连接，服务器端接到后发送应答报文，客户端再次发送Outgoing Call Request，等到服务器端响应后控制连接建立。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/07/01/PPTP/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
